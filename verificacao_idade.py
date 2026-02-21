@@ -4,12 +4,12 @@ def verificar_idade():
         try:
             idade = int(input("Digite a idade: "))
             if idade < 0:
-                print("Idade Inválida")
+                raise ValueError("Idade não pode ser negativa.")
             elif idade >= 18:
                 print("Maior de idade")
             else:
                 print("Menor de idade")
             break
-        except ValueError:
-            print("Erro: Somente número inteiro!.")
+        except ValueError as e:
+            print(f"Erro: {e}")
 verificar_idade()
