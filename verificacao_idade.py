@@ -1,4 +1,4 @@
-# Validação de entrada com tratamento de exceção
+# Validação de entrada com tratamento de exceção.
 def verificar_idade():
     while True:
         try:
